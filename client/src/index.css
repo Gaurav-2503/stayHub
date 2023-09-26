@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+
+*{
+  transition: ease-in-out 0.4s;
+  /* background-color: rgb(255, 238, 241); */
+}
+
+input[type="email"] , input[type="password"] , input[type="text"] , input[type="number"] , 
+input[type="tel"] ,
+textarea{
+  @apply w-full border my-2 py-2 px-4 rounded-md 
+}
+
+textarea{
+  height: 140px;
+}
+
+.mainPhoto:hover{
+  color: primary;
+}
+
+.login-btn , .primary {
+  @apply bg-primary w-full p-2 rounded-2xl my-5 text-white font-bold
+}
+
+.indexPage{
+  height:70vh;
+}
+
+.bottom {
+  background-color: black;
+  color: white;
+  padding-top: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+.bottom .blink ul li {
+  list-style: none;
+  outline: none;
+  /* gap: 2rem; */
+  margin-top: 15px;
+}
+
+.bottom .blink ul li:hover , .bottom .description .contact a:hover{
+  text-decoration: underline;
+  color : rgb(255 ,56 ,92);
+}
+
+
+.bottom .blink a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.bottom .description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+
+.bottom .description .desc {
+  width: 50%;
+}
+
+.bottom .description .contact a {
+  color: white;
+  text-decoration: none;
+}
+
+.ftr {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+
+
+
+
+/* :root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
